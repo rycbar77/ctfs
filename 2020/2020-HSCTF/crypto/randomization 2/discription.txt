@@ -1,0 +1,5 @@
+I was tired of writing verbose descriptions so I went and drank some coffee. Now I'm coding in Java. Darn it.
+
+The C implementation implements the PRNG used in java.util.Random, but outputs all 64 bits instead of the top 32.
+
+Connect with nc crypto.hsctf.com 6002.

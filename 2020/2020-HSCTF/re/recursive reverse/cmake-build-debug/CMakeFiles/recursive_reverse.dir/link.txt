@@ -1,0 +1,3 @@
+"C:\Program Files\JetBrains\CLion 2020.1.1\bin\cmake\win\bin\cmake.exe" -E remove -f CMakeFiles\recursive_reverse.dir/objects.a
+F:\Qt\Tools\mingw730_64\bin\ar.exe cr CMakeFiles\recursive_reverse.dir/objects.a @CMakeFiles\recursive_reverse.dir\objects1.rsp
+F:\Qt\Tools\mingw730_64\bin\g++.exe -g   -Wl,--whole-archive CMakeFiles\recursive_reverse.dir/objects.a -Wl,--no-whole-archive  -o recursive_reverse.exe -Wl,--out-implib,librecursive_reverse.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\recursive_reverse.dir\linklibs.rsp

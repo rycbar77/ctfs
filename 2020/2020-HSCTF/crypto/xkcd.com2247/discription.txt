@@ -1,0 +1,8 @@
+xkcd.com/2247 v2
+499
+crypto
+Why pick a weird hill to die on when you could pick a soft hill to lie on?
+
+Note: this challenge has been revised with a new flag. It was previously taken down and all solves for that challenge have been rolled back.
+
+The flag format will be flag{word_word_word}. The flag is hidden inside the plaintext, and does not include a flag{}.

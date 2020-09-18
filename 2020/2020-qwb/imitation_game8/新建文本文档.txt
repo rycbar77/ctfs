@@ -1,0 +1,940 @@
+C:\Users\rycbar\PycharmProjects\pythonProject1\venv\Scripts\python.exe C:/Users/rycbar/PycharmProjects/pythonProject1/limitation_game.py
+addr:0x200   jmp 2ce
+addr:0x202   clear screen
+addr:0x204   V0 = Vf
+addr:0x206   V0 = 14
+addr:0x208   V1 = 0d
+addr:0x20a   V2 = 0d
+addr:0x20c   set I=Ve
+addr:0x20e   store V0-Ve to addr start at I
+addr:0x210   Vf = 03
+addr:0x212   Ve += Vf  set VF=1 if VX>255
+addr:0x214   V0 = V0
+addr:0x216   V1 = V1
+addr:0x218   V2 = V2
+addr:0x21a   call 938
+addr:0x21c   V0 = Vf
+addr:0x21e   V0 = 19
+addr:0x220   V1 = 0d
+addr:0x222   V2 = 0e
+addr:0x224   set I=Ve
+addr:0x226   store V0-Ve to addr start at I
+addr:0x228   Vf = 03
+addr:0x22a   Ve += Vf  set VF=1 if VX>255
+addr:0x22c   V0 = V0
+addr:0x22e   V1 = V1
+addr:0x230   V2 = V2
+addr:0x232   call 938
+addr:0x234   V0 = Vf
+addr:0x236   V0 = 1e
+addr:0x238   V1 = 0d
+addr:0x23a   V2 = 0a
+addr:0x23c   set I=Ve
+addr:0x23e   store V0-Ve to addr start at I
+addr:0x240   Vf = 03
+addr:0x242   Ve += Vf  set VF=1 if VX>255
+addr:0x244   V0 = V0
+addr:0x246   V1 = V1
+addr:0x248   V2 = V2
+addr:0x24a   call 938
+addr:0x24c   V0 = Vf
+addr:0x24e   V0 = 23
+addr:0x250   V1 = 0d
+addr:0x252   V2 = 0d
+addr:0x254   set I=Ve
+addr:0x256   store V0-Ve to addr start at I
+addr:0x258   Vf = 03
+addr:0x25a   Ve += Vf  set VF=1 if VX>255
+addr:0x25c   V0 = V0
+addr:0x25e   V1 = V1
+addr:0x260   V2 = V2
+addr:0x262   call 938
+addr:0x264   V0 = Vf
+addr:0x266   V0 = 01
+addr:0x268   Skips the next instruction if V0 not equals 00
+addr:0x26a   jmp 26e
+addr:0x26c   jmp 266
+addr:0x26e   Vf = 03
+addr:0x270   Ve -= Vf  set VF=0 if VX<0
+addr:0x272   Vf = V0
+addr:0x274   set I=Ve
+addr:0x276   store addr start at I to V0-Ve
+addr:0x278   Returns from a subroutine
+addr:0x27a   V2 = V1
+addr:0x27c   V3 = 00
+addr:0x27e   Vf = 01
+addr:0x280   Skips the next instruction if V2 equals V3
+addr:0x282   Vf = 00
+addr:0x284   V2 = Vf
+addr:0x286   Skips the next instruction if V2 not equals 00
+addr:0x288   jmp 29a
+addr:0x28a   V2 = 00
+addr:0x28c   Vf = 03
+addr:0x28e   Ve -= Vf  set VF=0 if VX<0
+addr:0x290   Vf = V2
+addr:0x292   set I=Ve
+addr:0x294   store addr start at I to V0-Ve
+addr:0x296   Returns from a subroutine
+addr:0x298   jmp 29a
+addr:0x29a   V2 = V0
+addr:0x29c   V3 = V0
+addr:0x29e   V4 = V1
+addr:0x2a0   V5 = 01
+addr:0x2a2   V4 -= V5  set VF=0 if VX<0
+addr:0x2a4   set I=Ve
+addr:0x2a6   store V0-Ve to addr start at I
+addr:0x2a8   Vf = 03
+addr:0x2aa   Ve += Vf  set VF=1 if VX>255
+addr:0x2ac   V0 = V3
+addr:0x2ae   V1 = V4
+addr:0x2b0   call 27a
+addr:0x2b2   V3 = Vf
+addr:0x2b4   V2 += V3  set VF=1 if VX>255
+addr:0x2b6   Vf = 03
+addr:0x2b8   Ve -= Vf  set VF=0 if VX<0
+addr:0x2ba   Vf = V2
+addr:0x2bc   set I=Ve
+addr:0x2be   store addr start at I to V0-Ve
+addr:0x2c0   Returns from a subroutine
+addr:0x2c2   Vf = 03
+addr:0x2c4   Ve -= Vf  set VF=0 if VX<0
+addr:0x2c6   Vf = V2
+addr:0x2c8   set I=Ve
+addr:0x2ca   store addr start at I to V0-Ve
+addr:0x2cc   Returns from a subroutine
+addr:0x2ce   Ve = 10
+addr:0x2d0   set I=Ve
+addr:0x2d2   store V0-Ve to addr start at I
+addr:0x2d4   Vf = 03
+addr:0x2d6   Ve += Vf  set VF=1 if VX>255
+addr:0x2d8   call 928
+addr:0x2da   V0 = Vf
+addr:0x2dc   V1 = 05
+addr:0x2de   V2 = 08
+addr:0x2e0   V3 = V0
+addr:0x2e2   set I=Ve
+addr:0x2e4   store V0-Ve to addr start at I
+addr:0x2e6   Vf = 03
+addr:0x2e8   Ve += Vf  set VF=1 if VX>255
+addr:0x2ea   V0 = V1
+addr:0x2ec   V1 = V2
+addr:0x2ee   V2 = V3
+addr:0x2f0   call 938
+addr:0x2f2   V1 = Vf
+addr:0x2f4   set I=Ve
+addr:0x2f6   store V0-Ve to addr start at I
+addr:0x2f8   Vf = 03
+addr:0x2fa   Ve += Vf  set VF=1 if VX>255
+addr:0x2fc   call 928
+addr:0x2fe   V1 = Vf
+addr:0x300   V2 = 0f
+addr:0x302   V3 = 08
+addr:0x304   V4 = V1
+addr:0x306   set I=Ve
+addr:0x308   store V0-Ve to addr start at I
+addr:0x30a   Vf = 03
+addr:0x30c   Ve += Vf  set VF=1 if VX>255
+addr:0x30e   V0 = V2
+addr:0x310   V1 = V3
+addr:0x312   V2 = V4
+addr:0x314   call 938
+addr:0x316   V2 = Vf
+addr:0x318   set I=Ve
+addr:0x31a   store V0-Ve to addr start at I
+addr:0x31c   Vf = 03
+addr:0x31e   Ve += Vf  set VF=1 if VX>255
+addr:0x320   call 928
+addr:0x322   V2 = Vf
+addr:0x324   V3 = 19
+addr:0x326   V4 = 08
+addr:0x328   V5 = V2
+addr:0x32a   set I=Ve
+addr:0x32c   store V0-Ve to addr start at I
+addr:0x32e   Vf = 03
+addr:0x330   Ve += Vf  set VF=1 if VX>255
+addr:0x332   V0 = V3
+addr:0x334   V1 = V4
+addr:0x336   V2 = V5
+addr:0x338   call 938
+addr:0x33a   V3 = Vf
+addr:0x33c   set I=Ve
+addr:0x33e   store V0-Ve to addr start at I
+addr:0x340   Vf = 03
+addr:0x342   Ve += Vf  set VF=1 if VX>255
+addr:0x344   call 928
+addr:0x346   V3 = Vf
+addr:0x348   V4 = 23
+addr:0x34a   V5 = 08
+addr:0x34c   V6 = V3
+addr:0x34e   set I=Ve
+addr:0x350   store V0-Ve to addr start at I
+addr:0x352   Vf = 03
+addr:0x354   Ve += Vf  set VF=1 if VX>255
+addr:0x356   V0 = V4
+addr:0x358   V1 = V5
+addr:0x35a   V2 = V6
+addr:0x35c   call 938
+addr:0x35e   V4 = Vf
+addr:0x360   set I=Ve
+addr:0x362   store V0-Ve to addr start at I
+addr:0x364   Vf = 03
+addr:0x366   Ve += Vf  set VF=1 if VX>255
+addr:0x368   call 928
+addr:0x36a   V4 = Vf
+addr:0x36c   V5 = 2d
+addr:0x36e   V6 = 08
+addr:0x370   V7 = V4
+addr:0x372   set I=Ve
+addr:0x374   store V0-Ve to addr start at I
+addr:0x376   Vf = 03
+addr:0x378   Ve += Vf  set VF=1 if VX>255
+addr:0x37a   V0 = V5
+addr:0x37c   V1 = V6
+addr:0x37e   V2 = V7
+addr:0x380   call 938
+addr:0x382   V5 = Vf
+addr:0x384   set I=Ve
+addr:0x386   store V0-Ve to addr start at I
+addr:0x388   Vf = 03
+addr:0x38a   Ve += Vf  set VF=1 if VX>255
+addr:0x38c   call 928
+addr:0x38e   V5 = Vf
+addr:0x390   V6 = 05
+addr:0x392   V7 = 11
+addr:0x394   V8 = V5
+addr:0x396   set I=Ve
+addr:0x398   store V0-Ve to addr start at I
+addr:0x39a   Vf = 03
+addr:0x39c   Ve += Vf  set VF=1 if VX>255
+addr:0x39e   V0 = V6
+addr:0x3a0   V1 = V7
+addr:0x3a2   V2 = V8
+addr:0x3a4   call 938
+addr:0x3a6   V6 = Vf
+addr:0x3a8   set I=Ve
+addr:0x3aa   store V0-Ve to addr start at I
+addr:0x3ac   Vf = 03
+addr:0x3ae   Ve += Vf  set VF=1 if VX>255
+addr:0x3b0   call 928
+addr:0x3b2   V6 = Vf
+addr:0x3b4   V7 = 0f
+addr:0x3b6   V8 = 11
+addr:0x3b8   V9 = V6
+addr:0x3ba   set I=Ve
+addr:0x3bc   store V0-Ve to addr start at I
+addr:0x3be   Vf = 03
+addr:0x3c0   Ve += Vf  set VF=1 if VX>255
+addr:0x3c2   V0 = V7
+addr:0x3c4   V1 = V8
+addr:0x3c6   V2 = V9
+addr:0x3c8   call 938
+addr:0x3ca   V7 = Vf
+addr:0x3cc   set I=Ve
+addr:0x3ce   store V0-Ve to addr start at I
+addr:0x3d0   Vf = 03
+addr:0x3d2   Ve += Vf  set VF=1 if VX>255
+addr:0x3d4   call 928
+addr:0x3d6   V7 = Vf
+addr:0x3d8   V8 = 19
+addr:0x3da   V9 = 11
+addr:0x3dc   Va = V7
+addr:0x3de   set I=Ve
+addr:0x3e0   store V0-Ve to addr start at I
+addr:0x3e2   Vf = 03
+addr:0x3e4   Ve += Vf  set VF=1 if VX>255
+addr:0x3e6   V0 = V8
+addr:0x3e8   V1 = V9
+addr:0x3ea   V2 = Va
+addr:0x3ec   call 938
+addr:0x3ee   V8 = Vf
+addr:0x3f0   set I=Ve
+addr:0x3f2   store V0-Ve to addr start at I
+addr:0x3f4   Vf = 03
+addr:0x3f6   Ve += Vf  set VF=1 if VX>255
+addr:0x3f8   call 928
+addr:0x3fa   V8 = Vf
+addr:0x3fc   V9 = 23
+addr:0x3fe   Va = 11
+addr:0x400   Vb = V8
+addr:0x402   set I=Ve
+addr:0x404   store V0-Ve to addr start at I
+addr:0x406   Vf = 03
+addr:0x408   Ve += Vf  set VF=1 if VX>255
+addr:0x40a   V0 = V9
+addr:0x40c   V1 = Va
+addr:0x40e   V2 = Vb
+addr:0x410   call 938
+addr:0x412   V9 = Vf
+addr:0x414   set I=Ve
+addr:0x416   store V0-Ve to addr start at I
+addr:0x418   Vf = 03
+addr:0x41a   Ve += Vf  set VF=1 if VX>255
+addr:0x41c   call 928
+addr:0x41e   V9 = Vf
+addr:0x420   Va = 2d
+addr:0x422   Vb = 11
+addr:0x424   Vc = V9
+addr:0x426   set I=Ve
+addr:0x428   store V0-Ve to addr start at I
+addr:0x42a   Vf = 03
+addr:0x42c   Ve += Vf  set VF=1 if VX>255
+addr:0x42e   V0 = Va
+addr:0x430   V1 = Vb
+addr:0x432   V2 = Vc
+addr:0x434   call 938
+addr:0x436   Va = Vf
+addr:0x438   Va = V0
+addr:0x43a   Vb = V0
+addr:0x43c   Vc = 02
+addr:0x43e   Vb += Vc  set VF=1 if VX>255
+addr:0x440   Va = Vb
+addr:0x442   V0 = Va
+addr:0x444   Va = V1
+addr:0x446   Vb = V1
+addr:0x448   Vc = 01
+addr:0x44a   Vb += Vc  set VF=1 if VX>255
+addr:0x44c   Va = Vb
+addr:0x44e   V1 = Va
+addr:0x450   Va = V2
+addr:0x452   Vb = V2
+addr:0x454   Vc = 01
+addr:0x456   Vb += Vc  set VF=1 if VX>255
+addr:0x458   Vc = 01
+addr:0x45a   Vb = Vb ^ Vc
+addr:0x45c   Va = Vb
+addr:0x45e   V2 = Va
+addr:0x460   Va = V3
+addr:0x462   Vb = V3
+addr:0x464   Vc = 03
+addr:0x466   Vb += Vc  set VF=1 if VX>255
+addr:0x468   Va = Vb
+addr:0x46a   V3 = Va
+addr:0x46c   Va = V4
+addr:0x46e   Vb = V4
+addr:0x470   Vc = 02
+addr:0x472   Vb += Vc  set VF=1 if VX>255
+addr:0x474   Va = Vb
+addr:0x476   V4 = Va
+addr:0x478   Va = V5
+addr:0x47a   Vb = V5
+addr:0x47c   Vc = 02
+addr:0x47e   Vb = Vb ^ Vc
+addr:0x480   Vc = 01
+addr:0x482   Vb += Vc  set VF=1 if VX>255
+addr:0x484   Va = Vb
+addr:0x486   V5 = Va
+addr:0x488   Va = V6
+addr:0x48a   Vb = V6
+addr:0x48c   Vc = V6
+addr:0x48e   Vb += Vc  set VF=1 if VX>255
+addr:0x490   Va = Vb
+addr:0x492   V6 = Va
+addr:0x494   Va = V7
+addr:0x496   Vb = V7
+addr:0x498   Vc = 01
+addr:0x49a   Vb += Vc  set VF=1 if VX>255
+addr:0x49c   Va = Vb
+addr:0x49e   V7 = Va
+addr:0x4a0   Va = V8
+addr:0x4a2   Vb = V8
+addr:0x4a4   Vc = 01
+addr:0x4a6   Vb = Vb ^ Vc
+addr:0x4a8   Vc = 01
+addr:0x4aa   Vb += Vc  set VF=1 if VX>255
+addr:0x4ac   Va = Vb
+addr:0x4ae   V8 = Va
+addr:0x4b0   Va = V9
+addr:0x4b2   Vb = V9
+addr:0x4b4   Vc = 02
+addr:0x4b6   Vb += Vc  set VF=1 if VX>255
+addr:0x4b8   Va = Vb
+addr:0x4ba   V9 = Va
+addr:0x4bc   Va = 00
+addr:0x4be   Vb = Va
+addr:0x4c0   Vc = V0
+addr:0x4c2   Vd = 01
+addr:0x4c4   set I=Ve
+addr:0x4c6   store V0-Ve to addr start at I
+addr:0x4c8   Vf = 03
+addr:0x4ca   Ve += Vf  set VF=1 if VX>255
+addr:0x4cc   V0 = Vc
+addr:0x4ce   V1 = Vd
+addr:0x4d0   call 27a
+addr:0x4d2   Vc = Vf
+addr:0x4d4   Vb += Vc  set VF=1 if VX>255
+addr:0x4d6   Va = Vb
+addr:0x4d8   Vb = Va
+addr:0x4da   Vc = V1
+addr:0x4dc   Vd = 02
+addr:0x4de   set I=Ve
+addr:0x4e0   store V0-Ve to addr start at I
+addr:0x4e2   Vf = 03
+addr:0x4e4   Ve += Vf  set VF=1 if VX>255
+addr:0x4e6   V0 = Vc
+addr:0x4e8   V1 = Vd
+addr:0x4ea   call 27a
+addr:0x4ec   Vc = Vf
+addr:0x4ee   Vb += Vc  set VF=1 if VX>255
+addr:0x4f0   Va = Vb
+addr:0x4f2   Vb = Va
+addr:0x4f4   Vc = V2
+addr:0x4f6   Vd = 01
+addr:0x4f8   set I=Ve
+addr:0x4fa   store V0-Ve to addr start at I
+addr:0x4fc   Vf = 03
+addr:0x4fe   Ve += Vf  set VF=1 if VX>255
+addr:0x500   V0 = Vc
+addr:0x502   V1 = Vd
+addr:0x504   call 27a
+addr:0x506   Vc = Vf
+addr:0x508   Vb += Vc  set VF=1 if VX>255
+addr:0x50a   Va = Vb
+addr:0x50c   Vb = Va
+addr:0x50e   Vc = 21
+addr:0x510   Vf = 00
+addr:0x512   Skips the next instruction if Vb equals Vc
+addr:0x514   Vf = 01
+addr:0x516   Vb = Vf
+addr:0x518   Skips the next instruction if Vb not equals 00
+addr:0x51a   jmp 52e
+addr:0x51c   clear screen
+addr:0x51e   Vb = Vf
+addr:0x520   set I=Ve
+addr:0x522   store V0-Ve to addr start at I
+addr:0x524   Vf = 03
+addr:0x526   Ve += Vf  set VF=1 if VX>255
+addr:0x528   call 202
+addr:0x52a   Vb = Vf
+addr:0x52c   jmp 52e
+addr:0x52e   Vb = Va
+addr:0x530   Vc = 00
+addr:0x532   Vb = Vc
+addr:0x534   Va = Vb
+addr:0x536   Vb = Va
+addr:0x538   Vc = V0
+addr:0x53a   Vd = 02
+addr:0x53c   set I=Ve
+addr:0x53e   store V0-Ve to addr start at I
+addr:0x540   Vf = 03
+addr:0x542   Ve += Vf  set VF=1 if VX>255
+addr:0x544   V0 = Vc
+addr:0x546   V1 = Vd
+addr:0x548   call 27a
+addr:0x54a   Vc = Vf
+addr:0x54c   Vb += Vc  set VF=1 if VX>255
+addr:0x54e   Va = Vb
+addr:0x550   Vb = Va
+addr:0x552   Vc = V1
+addr:0x554   Vd = 01
+addr:0x556   set I=Ve
+addr:0x558   store V0-Ve to addr start at I
+addr:0x55a   Vf = 03
+addr:0x55c   Ve += Vf  set VF=1 if VX>255
+addr:0x55e   V0 = Vc
+addr:0x560   V1 = Vd
+addr:0x562   call 27a
+addr:0x564   Vc = Vf
+addr:0x566   Vb += Vc  set VF=1 if VX>255
+addr:0x568   Va = Vb
+addr:0x56a   Vb = Va
+addr:0x56c   Vc = V2
+addr:0x56e   Vd = 01
+addr:0x570   set I=Ve
+addr:0x572   store V0-Ve to addr start at I
+addr:0x574   Vf = 03
+addr:0x576   Ve += Vf  set VF=1 if VX>255
+addr:0x578   V0 = Vc
+addr:0x57a   V1 = Vd
+addr:0x57c   call 27a
+addr:0x57e   Vc = Vf
+addr:0x580   Vb += Vc  set VF=1 if VX>255
+addr:0x582   Va = Vb
+addr:0x584   Vb = Va
+addr:0x586   Vc = 2a
+addr:0x588   Vf = 00
+addr:0x58a   Skips the next instruction if Vb equals Vc
+addr:0x58c   Vf = 01
+addr:0x58e   Vb = Vf
+addr:0x590   Skips the next instruction if Vb not equals 00
+addr:0x592   jmp 5a6
+addr:0x594   clear screen
+addr:0x596   Vb = Vf
+addr:0x598   set I=Ve
+addr:0x59a   store V0-Ve to addr start at I
+addr:0x59c   Vf = 03
+addr:0x59e   Ve += Vf  set VF=1 if VX>255
+addr:0x5a0   call 202
+addr:0x5a2   Vb = Vf
+addr:0x5a4   jmp 5a6
+addr:0x5a6   Vb = Va
+addr:0x5a8   Vc = 00
+addr:0x5aa   Vb = Vc
+addr:0x5ac   Va = Vb
+addr:0x5ae   Vb = Va
+addr:0x5b0   Vc = V0
+addr:0x5b2   Vd = 01
+addr:0x5b4   set I=Ve
+addr:0x5b6   store V0-Ve to addr start at I
+addr:0x5b8   Vf = 03
+addr:0x5ba   Ve += Vf  set VF=1 if VX>255
+addr:0x5bc   V0 = Vc
+addr:0x5be   V1 = Vd
+addr:0x5c0   call 27a
+addr:0x5c2   Vc = Vf
+addr:0x5c4   Vb += Vc  set VF=1 if VX>255
+addr:0x5c6   Va = Vb
+addr:0x5c8   Vb = Va
+addr:0x5ca   Vc = V1
+addr:0x5cc   Vd = 02
+addr:0x5ce   set I=Ve
+addr:0x5d0   store V0-Ve to addr start at I
+addr:0x5d2   Vf = 03
+addr:0x5d4   Ve += Vf  set VF=1 if VX>255
+addr:0x5d6   V0 = Vc
+addr:0x5d8   V1 = Vd
+addr:0x5da   call 27a
+addr:0x5dc   Vc = Vf
+addr:0x5de   Vb += Vc  set VF=1 if VX>255
+addr:0x5e0   Va = Vb
+addr:0x5e2   Vb = Va
+addr:0x5e4   Vc = V2
+addr:0x5e6   Vd = 02
+addr:0x5e8   set I=Ve
+addr:0x5ea   store V0-Ve to addr start at I
+addr:0x5ec   Vf = 03
+addr:0x5ee   Ve += Vf  set VF=1 if VX>255
+addr:0x5f0   V0 = Vc
+addr:0x5f2   V1 = Vd
+addr:0x5f4   call 27a
+addr:0x5f6   Vc = Vf
+addr:0x5f8   Vb += Vc  set VF=1 if VX>255
+addr:0x5fa   Va = Vb
+addr:0x5fc   Vb = Va
+addr:0x5fe   Vc = 30
+addr:0x600   Vf = 00
+addr:0x602   Skips the next instruction if Vb equals Vc
+addr:0x604   Vf = 01
+addr:0x606   Vb = Vf
+addr:0x608   Skips the next instruction if Vb not equals 00
+addr:0x60a   jmp 61e
+addr:0x60c   clear screen
+addr:0x60e   Vb = Vf
+addr:0x610   set I=Ve
+addr:0x612   store V0-Ve to addr start at I
+addr:0x614   Vf = 03
+addr:0x616   Ve += Vf  set VF=1 if VX>255
+addr:0x618   call 202
+addr:0x61a   Vb = Vf
+addr:0x61c   jmp 61e
+addr:0x61e   Vb = Va
+addr:0x620   Vc = 00
+addr:0x622   Vb = Vc
+addr:0x624   Va = Vb
+addr:0x626   Vb = Va
+addr:0x628   Vc = V3
+addr:0x62a   Vd = 01
+addr:0x62c   set I=Ve
+addr:0x62e   store V0-Ve to addr start at I
+addr:0x630   Vf = 03
+addr:0x632   Ve += Vf  set VF=1 if VX>255
+addr:0x634   V0 = Vc
+addr:0x636   V1 = Vd
+addr:0x638   call 27a
+addr:0x63a   Vc = Vf
+addr:0x63c   Vb += Vc  set VF=1 if VX>255
+addr:0x63e   Va = Vb
+addr:0x640   Vb = Va
+addr:0x642   Vc = V4
+addr:0x644   Vd = 02
+addr:0x646   set I=Ve
+addr:0x648   store V0-Ve to addr start at I
+addr:0x64a   Vf = 03
+addr:0x64c   Ve += Vf  set VF=1 if VX>255
+addr:0x64e   V0 = Vc
+addr:0x650   V1 = Vd
+addr:0x652   call 27a
+addr:0x654   Vc = Vf
+addr:0x656   Vb += Vc  set VF=1 if VX>255
+addr:0x658   Va = Vb
+addr:0x65a   Vb = Va
+addr:0x65c   Vc = V5
+addr:0x65e   Vd = 01
+addr:0x660   set I=Ve
+addr:0x662   store V0-Ve to addr start at I
+addr:0x664   Vf = 03
+addr:0x666   Ve += Vf  set VF=1 if VX>255
+addr:0x668   V0 = Vc
+addr:0x66a   V1 = Vd
+addr:0x66c   call 27a
+addr:0x66e   Vc = Vf
+addr:0x670   Vb += Vc  set VF=1 if VX>255
+addr:0x672   Va = Vb
+addr:0x674   Vb = Va
+addr:0x676   Vc = 37
+addr:0x678   Vf = 00
+addr:0x67a   Skips the next instruction if Vb equals Vc
+addr:0x67c   Vf = 01
+addr:0x67e   Vb = Vf
+addr:0x680   Skips the next instruction if Vb not equals 00
+addr:0x682   jmp 696
+addr:0x684   clear screen
+addr:0x686   Vb = Vf
+addr:0x688   set I=Ve
+addr:0x68a   store V0-Ve to addr start at I
+addr:0x68c   Vf = 03
+addr:0x68e   Ve += Vf  set VF=1 if VX>255
+addr:0x690   call 202
+addr:0x692   Vb = Vf
+addr:0x694   jmp 696
+addr:0x696   Vb = Va
+addr:0x698   Vc = 00
+addr:0x69a   Vb = Vc
+addr:0x69c   Va = Vb
+addr:0x69e   Vb = Va
+addr:0x6a0   Vc = V3
+addr:0x6a2   Vd = 02
+addr:0x6a4   set I=Ve
+addr:0x6a6   store V0-Ve to addr start at I
+addr:0x6a8   Vf = 03
+addr:0x6aa   Ve += Vf  set VF=1 if VX>255
+addr:0x6ac   V0 = Vc
+addr:0x6ae   V1 = Vd
+addr:0x6b0   call 27a
+addr:0x6b2   Vc = Vf
+addr:0x6b4   Vb += Vc  set VF=1 if VX>255
+addr:0x6b6   Va = Vb
+addr:0x6b8   Vb = Va
+addr:0x6ba   Vc = V4
+addr:0x6bc   Vd = 01
+addr:0x6be   set I=Ve
+addr:0x6c0   store V0-Ve to addr start at I
+addr:0x6c2   Vf = 03
+addr:0x6c4   Ve += Vf  set VF=1 if VX>255
+addr:0x6c6   V0 = Vc
+addr:0x6c8   V1 = Vd
+addr:0x6ca   call 27a
+addr:0x6cc   Vc = Vf
+addr:0x6ce   Vb += Vc  set VF=1 if VX>255
+addr:0x6d0   Va = Vb
+addr:0x6d2   Vb = Va
+addr:0x6d4   Vc = V5
+addr:0x6d6   Vd = 01
+addr:0x6d8   set I=Ve
+addr:0x6da   store V0-Ve to addr start at I
+addr:0x6dc   Vf = 03
+addr:0x6de   Ve += Vf  set VF=1 if VX>255
+addr:0x6e0   V0 = Vc
+addr:0x6e2   V1 = Vd
+addr:0x6e4   call 27a
+addr:0x6e6   Vc = Vf
+addr:0x6e8   Vb += Vc  set VF=1 if VX>255
+addr:0x6ea   Va = Vb
+addr:0x6ec   Vb = Va
+addr:0x6ee   Vc = 37
+addr:0x6f0   Vf = 00
+addr:0x6f2   Skips the next instruction if Vb equals Vc
+addr:0x6f4   Vf = 01
+addr:0x6f6   Vb = Vf
+addr:0x6f8   Skips the next instruction if Vb not equals 00
+addr:0x6fa   jmp 70e
+addr:0x6fc   clear screen
+addr:0x6fe   Vb = Vf
+addr:0x700   set I=Ve
+addr:0x702   store V0-Ve to addr start at I
+addr:0x704   Vf = 03
+addr:0x706   Ve += Vf  set VF=1 if VX>255
+addr:0x708   call 202
+addr:0x70a   Vb = Vf
+addr:0x70c   jmp 70e
+addr:0x70e   Vb = Va
+addr:0x710   Vc = 00
+addr:0x712   Vb = Vc
+addr:0x714   Va = Vb
+addr:0x716   Vb = Va
+addr:0x718   Vc = V3
+addr:0x71a   Vd = 01
+addr:0x71c   set I=Ve
+addr:0x71e   store V0-Ve to addr start at I
+addr:0x720   Vf = 03
+addr:0x722   Ve += Vf  set VF=1 if VX>255
+addr:0x724   V0 = Vc
+addr:0x726   V1 = Vd
+addr:0x728   call 27a
+addr:0x72a   Vc = Vf
+addr:0x72c   Vb += Vc  set VF=1 if VX>255
+addr:0x72e   Va = Vb
+addr:0x730   Vb = Va
+addr:0x732   Vc = V4
+addr:0x734   Vd = 02
+addr:0x736   set I=Ve
+addr:0x738   store V0-Ve to addr start at I
+addr:0x73a   Vf = 03
+addr:0x73c   Ve += Vf  set VF=1 if VX>255
+addr:0x73e   V0 = Vc
+addr:0x740   V1 = Vd
+addr:0x742   call 27a
+addr:0x744   Vc = Vf
+addr:0x746   Vb += Vc  set VF=1 if VX>255
+addr:0x748   Va = Vb
+addr:0x74a   Vb = Va
+addr:0x74c   Vc = V5
+addr:0x74e   Vd = 02
+addr:0x750   set I=Ve
+addr:0x752   store V0-Ve to addr start at I
+addr:0x754   Vf = 03
+addr:0x756   Ve += Vf  set VF=1 if VX>255
+addr:0x758   V0 = Vc
+addr:0x75a   V1 = Vd
+addr:0x75c   call 27a
+addr:0x75e   Vc = Vf
+addr:0x760   Vb += Vc  set VF=1 if VX>255
+addr:0x762   Va = Vb
+addr:0x764   Vb = Va
+addr:0x766   Vc = 3b
+addr:0x768   Vf = 00
+addr:0x76a   Skips the next instruction if Vb equals Vc
+addr:0x76c   Vf = 01
+addr:0x76e   Vb = Vf
+addr:0x770   Skips the next instruction if Vb not equals 00
+addr:0x772   jmp 786
+addr:0x774   clear screen
+addr:0x776   Vb = Vf
+addr:0x778   set I=Ve
+addr:0x77a   store V0-Ve to addr start at I
+addr:0x77c   Vf = 03
+addr:0x77e   Ve += Vf  set VF=1 if VX>255
+addr:0x780   call 202
+addr:0x782   Vb = Vf
+addr:0x784   jmp 786
+addr:0x786   Vb = Va
+addr:0x788   Vc = 00
+addr:0x78a   Vb = Vc
+addr:0x78c   Va = Vb
+addr:0x78e   Vb = Va
+addr:0x790   Vc = V6
+addr:0x792   Vd = 01
+addr:0x794   set I=Ve
+addr:0x796   store V0-Ve to addr start at I
+addr:0x798   Vf = 03
+addr:0x79a   Ve += Vf  set VF=1 if VX>255
+addr:0x79c   V0 = Vc
+addr:0x79e   V1 = Vd
+addr:0x7a0   call 27a
+addr:0x7a2   Vc = Vf
+addr:0x7a4   Vb += Vc  set VF=1 if VX>255
+addr:0x7a6   Va = Vb
+addr:0x7a8   Vb = Va
+addr:0x7aa   Vc = V7
+addr:0x7ac   Vd = 02
+addr:0x7ae   set I=Ve
+addr:0x7b0   store V0-Ve to addr start at I
+addr:0x7b2   Vf = 03
+addr:0x7b4   Ve += Vf  set VF=1 if VX>255
+addr:0x7b6   V0 = Vc
+addr:0x7b8   V1 = Vd
+addr:0x7ba   call 27a
+addr:0x7bc   Vc = Vf
+addr:0x7be   Vb += Vc  set VF=1 if VX>255
+addr:0x7c0   Va = Vb
+addr:0x7c2   Vb = Va
+addr:0x7c4   Vc = V8
+addr:0x7c6   Vd = 01
+addr:0x7c8   set I=Ve
+addr:0x7ca   store V0-Ve to addr start at I
+addr:0x7cc   Vf = 03
+addr:0x7ce   Ve += Vf  set VF=1 if VX>255
+addr:0x7d0   V0 = Vc
+addr:0x7d2   V1 = Vd
+addr:0x7d4   call 27a
+addr:0x7d6   Vc = Vf
+addr:0x7d8   Vb += Vc  set VF=1 if VX>255
+addr:0x7da   Va = Vb
+addr:0x7dc   Vb = Va
+addr:0x7de   Vc = 1f
+addr:0x7e0   Vf = 00
+addr:0x7e2   Skips the next instruction if Vb equals Vc
+addr:0x7e4   Vf = 01
+addr:0x7e6   Vb = Vf
+addr:0x7e8   Skips the next instruction if Vb not equals 00
+addr:0x7ea   jmp 7fe
+addr:0x7ec   clear screen
+addr:0x7ee   Vb = Vf
+addr:0x7f0   set I=Ve
+addr:0x7f2   store V0-Ve to addr start at I
+addr:0x7f4   Vf = 03
+addr:0x7f6   Ve += Vf  set VF=1 if VX>255
+addr:0x7f8   call 202
+addr:0x7fa   Vb = Vf
+addr:0x7fc   jmp 7fe
+addr:0x7fe   Vb = Va
+addr:0x800   Vc = 00
+addr:0x802   Vb = Vc
+addr:0x804   Va = Vb
+addr:0x806   Vb = Va
+addr:0x808   Vc = V6
+addr:0x80a   Vd = 02
+addr:0x80c   set I=Ve
+addr:0x80e   store V0-Ve to addr start at I
+addr:0x810   Vf = 03
+addr:0x812   Ve += Vf  set VF=1 if VX>255
+addr:0x814   V0 = Vc
+addr:0x816   V1 = Vd
+addr:0x818   call 27a
+addr:0x81a   Vc = Vf
+addr:0x81c   Vb += Vc  set VF=1 if VX>255
+addr:0x81e   Va = Vb
+addr:0x820   Vb = Va
+addr:0x822   Vc = V7
+addr:0x824   Vd = 01
+addr:0x826   set I=Ve
+addr:0x828   store V0-Ve to addr start at I
+addr:0x82a   Vf = 03
+addr:0x82c   Ve += Vf  set VF=1 if VX>255
+addr:0x82e   V0 = Vc
+addr:0x830   V1 = Vd
+addr:0x832   call 27a
+addr:0x834   Vc = Vf
+addr:0x836   Vb += Vc  set VF=1 if VX>255
+addr:0x838   Va = Vb
+addr:0x83a   Vb = Va
+addr:0x83c   Vc = V8
+addr:0x83e   Vd = 01
+addr:0x840   set I=Ve
+addr:0x842   store V0-Ve to addr start at I
+addr:0x844   Vf = 03
+addr:0x846   Ve += Vf  set VF=1 if VX>255
+addr:0x848   V0 = Vc
+addr:0x84a   V1 = Vd
+addr:0x84c   call 27a
+addr:0x84e   Vc = Vf
+addr:0x850   Vb += Vc  set VF=1 if VX>255
+addr:0x852   Va = Vb
+addr:0x854   Vb = Va
+addr:0x856   Vc = 16
+addr:0x858   Vf = 00
+addr:0x85a   Skips the next instruction if Vb equals Vc
+addr:0x85c   Vf = 01
+addr:0x85e   Vb = Vf
+addr:0x860   Skips the next instruction if Vb not equals 00
+addr:0x862   jmp 876
+addr:0x864   clear screen
+addr:0x866   Vb = Vf
+addr:0x868   set I=Ve
+addr:0x86a   store V0-Ve to addr start at I
+addr:0x86c   Vf = 03
+addr:0x86e   Ve += Vf  set VF=1 if VX>255
+addr:0x870   call 202
+addr:0x872   Vb = Vf
+addr:0x874   jmp 876
+addr:0x876   Vb = Va
+addr:0x878   Vc = 00
+addr:0x87a   Vb = Vc
+addr:0x87c   Va = Vb
+addr:0x87e   Vb = Va
+addr:0x880   Vc = V6
+addr:0x882   Vd = 01
+addr:0x884   set I=Ve
+addr:0x886   store V0-Ve to addr start at I
+addr:0x888   Vf = 03
+addr:0x88a   Ve += Vf  set VF=1 if VX>255
+addr:0x88c   V0 = Vc
+addr:0x88e   V1 = Vd
+addr:0x890   call 27a
+addr:0x892   Vc = Vf
+addr:0x894   Vb += Vc  set VF=1 if VX>255
+addr:0x896   Va = Vb
+addr:0x898   Vb = Va
+addr:0x89a   Vc = V7
+addr:0x89c   Vd = 02
+addr:0x89e   set I=Ve
+addr:0x8a0   store V0-Ve to addr start at I
+addr:0x8a2   Vf = 03
+addr:0x8a4   Ve += Vf  set VF=1 if VX>255
+addr:0x8a6   V0 = Vc
+addr:0x8a8   V1 = Vd
+addr:0x8aa   call 27a
+addr:0x8ac   Vc = Vf
+addr:0x8ae   Vb += Vc  set VF=1 if VX>255
+addr:0x8b0   Va = Vb
+addr:0x8b2   Vb = Va
+addr:0x8b4   Vc = V8
+addr:0x8b6   Vd = 02
+addr:0x8b8   set I=Ve
+addr:0x8ba   store V0-Ve to addr start at I
+addr:0x8bc   Vf = 03
+addr:0x8be   Ve += Vf  set VF=1 if VX>255
+addr:0x8c0   V0 = Vc
+addr:0x8c2   V1 = Vd
+addr:0x8c4   call 27a
+addr:0x8c6   Vc = Vf
+addr:0x8c8   Vb += Vc  set VF=1 if VX>255
+addr:0x8ca   Va = Vb
+addr:0x8cc   Vb = Va
+addr:0x8ce   Vc = 20
+addr:0x8d0   Vf = 00
+addr:0x8d2   Skips the next instruction if Vb equals Vc
+addr:0x8d4   Vf = 01
+addr:0x8d6   Vb = Vf
+addr:0x8d8   Skips the next instruction if Vb not equals 00
+addr:0x8da   jmp 8ee
+addr:0x8dc   clear screen
+addr:0x8de   Vb = Vf
+addr:0x8e0   set I=Ve
+addr:0x8e2   store V0-Ve to addr start at I
+addr:0x8e4   Vf = 03
+addr:0x8e6   Ve += Vf  set VF=1 if VX>255
+addr:0x8e8   call 202
+addr:0x8ea   Vb = Vf
+addr:0x8ec   jmp 8ee
+addr:0x8ee   Vb = V9
+addr:0x8f0   Vc = 05
+addr:0x8f2   Vf = 00
+addr:0x8f4   Skips the next instruction if Vb equals Vc
+addr:0x8f6   Vf = 01
+addr:0x8f8   Vb = Vf
+addr:0x8fa   Skips the next instruction if Vb not equals 00
+addr:0x8fc   jmp 910
+addr:0x8fe   clear screen
+addr:0x900   Vb = Vf
+addr:0x902   set I=Ve
+addr:0x904   store V0-Ve to addr start at I
+addr:0x906   Vf = 03
+addr:0x908   Ve += Vf  set VF=1 if VX>255
+addr:0x90a   call 202
+addr:0x90c   Vb = Vf
+addr:0x90e   jmp 910
+addr:0x910   clear screen
+addr:0x912   Vb = Vf
+addr:0x914   Vb = 01
+addr:0x916   Skips the next instruction if Vb not equals 00
+addr:0x918   jmp 91c
+addr:0x91a   jmp 914
+addr:0x91c   Vf = 03
+addr:0x91e   Ve -= Vf  set VF=0 if VX<0
+addr:0x920   Vf = V0
+addr:0x922   set I=Ve
+addr:0x924   store addr start at I to V0-Ve
+addr:0x926   Returns from a subroutine
+addr:0x928   V0 = ff
+addr:0x92a   set V0 = button pressed
+addr:0x92c   Vf = 03
+addr:0x92e   Ve -= Vf  set VF=0 if VX<0
+addr:0x930   Vf = V0
+addr:0x932   set I=Ve
+addr:0x934   store addr start at I to V0-Ve
+addr:0x936   Returns from a subroutine
+addr:0x938   V5 = V2
+addr:0x93a   V4 = V1
+addr:0x93c   V3 = V0
+addr:0x93e   V6 = 00
+addr:0x940   set BCD(V5)
+addr:0x942   store addr start at I to V0-V2
+addr:0x944   set I=V5
+addr:0x946   display at (V3,V4) for 5rows
+addr:0x948   V6 = V6 | Vf
+addr:0x94a   Vf = 03
+addr:0x94c   Ve -= Vf  set VF=0 if VX<0
+addr:0x94e   Vf = V6
+addr:0x950   set I=Ve
+addr:0x952   store addr start at I to V0-Ve
+addr:0x954   Returns from a subroutine

@@ -1,0 +1,57 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+	<head>
+		<title>Quantum PLC Data Monitor</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+		<link href="../../lib/main.css" type="text/css" rel="stylesheet">
+	</head>
+	<body>
+		<table width="100%" border="0">
+			<tr>
+				<td class="title">QUANTUM PLC DATA MONITOR</td>
+			</tr>
+			<tr>
+				<td align="center">
+					<script language="JavaScript">
+<!--
+    // If JavaScript is being processed, generate an <APPLET> tag that sets the
+    // applet's height based on the user's screen resolution.
+    var appletHeight = screen.height - 320;
+
+    if( appletHeight <= 380 )  {
+        appletHeight = 380;
+    }
+    else if( appletHeight <= 548 )  {
+        appletHeight = 548;
+    }
+
+    document.write( "<APPLET name='Data Editor' codebase='../../classes' archive='SAComm.jar,RDE.jar' code='com.schneiderautomation.rde.LiveDataApplet' width=700 height=" + appletHeight + ">" );
+    document.write( "</APPLET>" );
+//-->
+					</script>
+<!-------------------------------------------------------------------------------
+In the following, if JavaScript is being processed, the <APPLET> tag is made
+to appear as a HTML comment; otherwise, it looks like a normal HTML <APPLET> tag.
+-------------------------------------------------------------------------------->
+					<script language="JavaScript">
+<!--
+    // start HTML comment
+    document.write( "<" + "!--" );
+//-->
+					</script>
+					<applet name="Data Editor" codebase="../../classes" archive="SAComm.jar,RDE.jar" code="com.schneiderautomation.rde.LiveDataApplet"
+						width="700" height="380"></applet>
+					<script language="JavaScript">
+<!--
+    // end HTML comment
+    document.write( "--" + ">");
+//-->
+					</script>
+				</td>
+			</tr>
+			<tr>
+				<td align="center">Copyright &copy; 1998-2004, Schneider Automation SAS. All rights reserved.</td>
+			</tr>
+		</table>
+	</body>
+</html>

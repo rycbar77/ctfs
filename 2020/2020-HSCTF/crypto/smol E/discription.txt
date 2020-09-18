@@ -1,0 +1,4 @@
+Smol E
+488
+rsa crypto
+Anshul has a message that he wants to send to Disha using RSA. He padded the message with a random padding and sent it to Disha, but she didn’t receive the message. However, she was able to receive the message after a second attempt from Anshul. You were able to intercept both of Anshul’s ciphertexts, and you are also given Anshul’s RSA public key. Can you recover the message?
