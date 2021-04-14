@@ -1,0 +1,129 @@
+00445ba0  int32_t data_445ba0 = 0x0
+00445ba4  int32_t data_445ba4 = 0x0
+00445ba8  int32_t data_445ba8 = 0x0
+00445bac  int32_t ebp = 0x0
+00445bb0  int32_t data_445bb0 = 0x0
+00445bb4  int32_t data_445bb4 = 0x0
+00445bb8  int32_t data_445bb8 = 0x0
+00445bbc  int32_t data_445bbc = 0x0
+00445bc0  int32_t data_445bc0 = 0x0
+00445bc4  int32_t reg1 = 0x0
+00445bc8  int32_t esp = 0x0
+00445bcc  int32_t reg3 = 0x0
+00445bd0  int32_t data_445bd0 = 0x0
+00445bd4  int32_t reg2 = 0x0
+00445bd8  int32_t op_index = 0x0
+00445bdc  int32_t reg0 = 0x0
+
+
+
+op=0: 
+index++
+
+op=1 a,b: 
+index+=3
+regs[a]=b
+
+op=2 a:
+index+=3
+[ebp+esp]=a =>push byte
+
+
+op=3 a:
+index+=3
+push reg[a]
+
+op=4 a:
+index+=3
+pop reg[a]
+
+op=5:
+index+=3
+check:
+reg[3]=0:
+    right
+    7c00(445ba8)
+reg[3]=1:
+    wrong
+    7c00(445ba8)
+reg[3]=3:
+    input
+    7c00(445ba8)
+reg[3]=4:
+    hacker
+
+op=6 a,b:
+index+=3
+add reg[a],reg[b]
+
+op=7 a,b:
+index+=3
+sub reg[a],reg[b]
+
+op=8 a,b:
+index+=3
+imul reg[a],reg[b]
+
+
+op=9 a,b:
+index+=3
+idiv reg[a],reg[b]
+eax=>reg[0]
+edx=>reg[1]
+
+op=0xa a,b:
+index+=3
+xor reg[a],reg[b]
+
+op=0xb a:
+index=3*a-3
+
+op=0xc a,b:
+index+=3
+reg[3]=reg[a]-reg[b]
+
+op=0xd a:
+if reg[3]!=0:
+    index+=3
+else:
+    index=3*a-3
+
+op=0xe a:
+if reg[3]==0:
+    index+=3
+else:
+    index=3*a-3
+
+op=0xf a:
+if reg[3]<=0:
+    index+=3
+else:
+    index=3*a-3
+
+op=0x10 a:
+if reg[3]>=0:
+    index+=3
+else:
+    index=3*a-3
+
+op=0x11 :
+index+=3
+79e0(445ba8)
+input flag
+flag in *445ba8
+length in reg[0]
+
+op=0x12 a,b:
+index+=3
+2d90(*445ba8+a,0,b)
+
+op=0x13 a,b:
+index+=3
+reg[a]=*(reg[b]+*445bd0+*ebp)
+
+op=0x14 a,b:
+index+=3
+reg[a]=*(reg[b]+*445ba8)
+
+op=0xff:
+end
