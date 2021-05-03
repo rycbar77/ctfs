@@ -1,0 +1,3 @@
+flag{([0-9a-f]{8})-([0-9a-f]{4})-([0-9a-f]{4})-([0-9a-f]{4})-([0-9a-f]{12})}
+flag{3bbcf9ea-2918-4fee-8a2e-201b47dfcb4e}
+3bbcf9ea29184fee8a2e201b47dfcb4e
